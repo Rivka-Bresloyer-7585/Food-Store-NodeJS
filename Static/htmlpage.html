@@ -1,0 +1,80 @@
+﻿<!--<!DOCTYPE html>
+<html>
+<head>
+    <link href="Style/StyleSheet.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <form>
+            <div class="container">
+                <label for="Email"><b>שם משתמש</b></label><br />
+                <input type="text" id="name" placeholder="Enter Email" name="Email" required /><br />
+                <label for="Pswd"><b>password</b></label><br />
+                <input type="password" id="pswd" placeholder="Enter Password" name="Pswd" required /><br />
+                <button type="button" class="signupbtn" href="htmlpage1.html" onclick="getUser()">התחבר</button>
+                <button type="button" class="signupbtn" onclick=newUser()>משתמש חדש</button>
+            </div>
+        </form>
+        <br />
+        <br />
+        <br />
+        <div class="container" hidden id="hide">
+            <label for="Email1"><b>שם משתמש</b></label><br />
+            <input type="text" id="h1" placeholder="Enter Email" name="Email1" required /><br />
+            <label for="Pswd1"><b>password</b></label><br />
+            <input type="password" id="h2" placeholder="Enter Password" name="Pswd1" required /><br />
+            <label for="fn"><b>First name</b></label><br />
+            <input type="text" id="h3" placeholder="Enter Password" name="fn" /><br />
+            <label for="fl"><b>Last Name</b></label><br />
+            <input type="text" id="h4" placeholder="Enter Password" name="fl" /><br />
+            <button onclick=postUser()>הכנס משתמש</button>
+        </div>
+    </div>
+</body>
+<script src="../Js/JavaScript.js"></script>
+</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="Style/StyleSheet.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="Images/login/logo.gif" />
+        <form>
+            <div class="row">
+                <div class="col">
+                    <label for="email"><b>מייל</b></label><br />
+                    <input type="text" id="name" placeholder="הכנס כתובת מייל" name="email" required /><br />
+
+                    <label for="psw"><b>סיסמא</b></label><br />
+                    <input type="password" id="pswd" placeholder="הכנס סיסמא" name="psw" required /><br />
+                    <button type="button" href="htmlpage1.html" class="signupbtn" onclick="getUser()">התחברות</button>
+                    <button type="button" class="signupbtn" onclick="newUser()">הכנס משתמש חדש</button>
+                </div>
+
+                <div hidden id="hide" class="col">
+                    <label for="email1"><b>מייל</b></label><br />
+                    <input id="h1" type="text" placeholder="הכנס כתובת מייל" name="email1" required /><br />
+
+                    <label for="psw1"><b>סיסמא</b></label><br />
+                    <input id="h2" type="password" placeholder="הכנס סיסמא" name="psw1" required /><br />
+
+                    <label for="fname"><b>שם פרטי</b></label><br />
+                    <input id="h3" type="text" placeholder="הכנס שם פרטי" name="fname" /><br />
+
+                    <label for="lname"><b>שם משפחה</b></label><br />
+                    <input id="h4" type="text" placeholder="הכנס שם משפחה" name="lname" /><br />
+
+                    <button onclick="postUser()">התחברות</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../Js/JavaScript.js"></script>
+</html>

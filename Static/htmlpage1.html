@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Style/StyleSheet.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1 style="text-align:center" id="welcome"></h1>
+    <button onclick="newUser()">עדכן שם משתמש</button>
+    <a href="Products.html">לכניסה לאתר</a>
+    <div hidden id="hide">
+        <label for="email1"><b>מייל</b></label><br />
+        <input id="h1" type="text" placeholder="הכנס כתובת מייל" name="email1" required /><br />
+
+        <label for="psw1"><b>סיסמא</b></label><br />
+        <input id="h2" type="password" placeholder="הכנס סיסמא" name="psw1" required /><br />
+
+        <label for="fname"><b>שם פרטי</b></label><br />
+        <input id="h3" type="text" placeholder="הכנס שם פרטי" name="fname" /><br />
+
+        <label for="lname"><b>שם משפחה</b></label><br />
+        <input id="h4" type="text" placeholder="הכנס שם משפחה" name="lname" /><br />
+
+        <button onclick="putUser()">לעידכון פרטים</button>
+    </div>
+</body>
+<script src="../Js/JavaScript.js"></script>
+<script src="../Js/JavaScript1.js"></script>
+
+</html>
